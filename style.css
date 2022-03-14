@@ -1,0 +1,129 @@
+/* 1 for stating use */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bgimg{
+    background-image: url("pizza.jpg");
+}
+/* 2 now make a navbar first use displauyflex and than use align-items: center; */
+#navbar{
+display: flex;
+align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 81%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+} 
+
+/* 5 #navbar::before*/ /*first make this and then copy/past into the navbar */
+/* #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+} */
+
+/* 3 #navbar: logo and image (first set the ("logo and logo img") do this than other )*/
+
+#logo{
+    margin: -25px -10px;
+}
+
+#logo img{
+    height: 82px;
+    margin: 35px 35px;
+    border: 2px solid red;
+    
+}
+
+/* 4 #navbar: list styleing  */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+   list-style: none;
+  font-size: 1.2rem;  /* in the font size we can use the ("rem") in place of("px")  */
+}
+
+#navbar ul li a {
+    color: white;
+   display: block;
+   padding: 3px 20px;
+   border-radius: 20px;
+   text-decoration: none; /* for removeing the under-line use this  */
+
+}
+#navbar ul li a:hover {
+    color:black;
+  background: white;
+}
+/* 6 home section */
+#home{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+ 
+   background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 35px;
+}
+#home p{
+    color: white;
+    font-size: 24px;
+    margin: 35px;
+}
+/* .btn{
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+} */
+
+
+
+.itemCards{
+    display: flex;
+    justify-content: center;
+}
+
+.itemCards section{
+    border:2px solid red;
+    margin: 10px  20px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 50px 9px;
+    width:30%
+}
